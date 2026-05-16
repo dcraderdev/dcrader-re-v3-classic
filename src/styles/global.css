@@ -30,9 +30,14 @@
    SCROLL ANIMATION
 ============================================================ */
 .animate-on-scroll {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.animate-on-scroll.will-animate {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
 }
 
 .animate-on-scroll.in-view {
